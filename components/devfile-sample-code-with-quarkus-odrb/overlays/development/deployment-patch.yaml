@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-odrb
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-afsn-tenant/quarkus/devfile-sample-code-with-quarkus-odrb@sha256:677f4c045795bcd5f8f1587bfd7a436cacc62e3e86275e041a66df676484fd98
+        name: my-java-quarkus
+        resources: {}
+status: {}
